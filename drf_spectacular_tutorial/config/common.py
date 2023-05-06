@@ -20,6 +20,7 @@ class Common(Configuration):
         "rest_framework",  # utilities for rest apis
         "rest_framework.authtoken",  # token authentication
         "django_filters",  # for filtering rest endpoints
+        "drf_spectacular",  # for documenting endpoints with OpenAPI
         # Your apps
         "drf_spectacular_tutorial.users",
     )
@@ -188,4 +189,13 @@ class Common(Configuration):
             "rest_framework.authentication.SessionAuthentication",
             "rest_framework.authentication.TokenAuthentication",
         ),
+        "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+    }
+
+    # drf-spectacular
+    SPECTACULAR_SETTINGS = {
+        "TITLE": "DRF Spectacular tutorial",
+        "DESCRIPTION": "Tutorial for drf-spectacular",
+        "VERSION": "1.0.0",
+        "SERVE_INCLUDE_SCHEMA": False,
     }
