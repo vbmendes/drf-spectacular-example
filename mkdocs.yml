@@ -1,0 +1,12 @@
+site_name: drf_spectacular_tutorial
+site_description: Tutorial for drf-spectacular
+repo_url: https://github.com/vbmendes/drf_spectacular_tutorial
+site_dir: site
+copyright: Copyright &copy; 2020, <a href="https://github.com/vbmendes">vbmendes</a>.
+dev_addr: 0.0.0.0:8001
+
+nav:
+  - Home: 'index.md'
+  - API:
+    - Authentication: 'api/authentication.md'
+    - Users: 'api/users.md'
