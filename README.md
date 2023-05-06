@@ -21,3 +21,11 @@ Run a command inside the docker container:
 ```bash
 docker-compose run --rm web [command]
 ```
+
+# Create OpenAPI schema
+
+Run the command to create the OpenAPI schema
+
+```
+docker-compose run --rm web python manage.py spectacular --file spec/openapi.yaml
+```
